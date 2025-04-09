@@ -16,8 +16,6 @@ body {
 }
 /*Card Container*/
 .card {
-    display:flex;
-    flex-direction: column;
     border-radius: 15px;
     background-color: #f5f5f5;
     padding: 40px 30px;
@@ -34,16 +32,127 @@ body {
 }
 
 .subtitle {
+    font-size: 14px;
     font-weight: 500;
     color:gray;
+    text-align: center;
 }
 
 .subtitle a {
     text-decoration: none;
     font-weight: bold;
     color: blue;
-
 }
+
+/* Social buttons */
+.social-login {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.google-btn,.fb-btn {
+    flex: 1;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+img {
+    width: 20px;
+    height: 20px;
+}
+
+.google-btn .btn-text {
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 10px;
+    white-space: nowrap;
+}
+
+/* Hover */
+.google-btn:hover,.fb-btn:hover {
+    background-color: rgb(230, 224, 237);
+}
+
+/* Divider */
+.or {
+    display: flex;
+    align-items: center;
+    text-align: center
+    margin: 20px 0;
+}
+
+/* .or span {
+    padding: 0 10px;
+    position: relative;
+    z-index: 1;
+} */
+
+.or::before,.or::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #7e7e7e;
+}
+
+.or span {
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+/* Email login fields */
+.email-login label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 6px;
+    margin-top: 10px;
+}
+
+.email-login input {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+/* Login button */
+.cta-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: blue;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.cta-btn:hover {
+    background-color: rgb(2, 2, 211);
+}
+
+/* Link */
+.forget-pass {
+    display: block;
+    text-align: center;
+    margin-top: 18px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+
+
 
 /*form{
   display: grid;
